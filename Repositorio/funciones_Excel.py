@@ -68,7 +68,8 @@ def main():
 
     if validar_columnas(df):
         df=limpiar_datos(df)
-        guardar_archivo(df,"salida1")
+        nombre_sali = input('Ingrese su el nombre de salida del documento: ')
+        guardar_archivo(df,nombre_sali)
     else:
         print("⚠️ El archivo no tiene las columnas necesarias: 'Precio' y 'Cantidad'.")
 
